@@ -6,14 +6,18 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
 
     <!-- color palette-->
     <color name = "orange">#ee6e3b</color>
     <color name = "brown">#541007</color>
-    <color name = "lightGrey">#fdffff</color>
+    <color name = "greyBlue">#5d5d7e</color>
+    <color name = "lightBlue">#c2cdde</color>
+    <color name = "white">#ffffff</color>
+    <color name = "lightGrey">#f2f3f7</color>
+
     <color name = "mint">#E0EFDE</color>
     <color name = "rocket_metalic">#7F7979</color>
     <color name = "purple">#5F5B6B</color>
+
 
 </resources>
