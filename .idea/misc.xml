@@ -6,8 +6,10 @@
         <entry key="app/src/main/res/drawable/corner_view.xml" value="0.1635" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.308" />
         <entry key="app/src/main/res/drawable/search_view.xml" value="0.307" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_main_page.xml" value="0.2802999288094144" />
+        <entry key="app/src/main/res/font/asap_bold.xml" value="0.296875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22917086836220568" />
+        <entry key="app/src/main/res/layout/fragment_main_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_viewed_recently.xml" value="0.20606884057971014" />
       </map>
     </option>
   </component>

@@ -5,6 +5,6 @@
 
     <string name="Welcome">Bienvenido</string>
     <string name="Search">Buscar</string>
-    <string name= "Breakfast">Desayuno</string>
-    <string name = "Dinner">Almuerzo y Cena</string>
+    <string name="Breakfast">Desayuno</string>
+    <string name="Dinner">Almuerzo y Cena</string>
 </resources>
