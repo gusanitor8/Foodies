@@ -98,18 +98,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordTextView" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="@string/LogIn"
+            android:layout_width="149dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/corner_view"
+            android:backgroundTint="@color/orange"
             android:fontFamily="@font/asap_bold"
+            android:text="@string/LogIn"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-            android:background="@color/orange"/>
+
+            />
+
 
         <!--- WIDGET ALMUERZO Y CENA -->
 
