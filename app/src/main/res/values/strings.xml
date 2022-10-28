@@ -12,4 +12,14 @@
     <string name="ExampleMail">ejemplo@correo.com</string>
     <string name="Password">Contraseña</string>
     <string name="ExamplePassword">•••••••••</string>
+    <string name="SignUp">Crear Cuenta</string>
+    <string name="YourEmail">Tu correo electrónico</string>
+    <string name="Continue">Continuar</string>
+    <string name="YesAccount">¿Ya tienes cuenta?</string>
+    <string name="CreateAccount">Crear Cuenta</string>
+    <string name="NoAccount">¿No tienes cuenta?</string>
+    <string name="Favorites">Favoritos</string>
+    <string name="Restaurants">Restaurantes</string>
+    <string name="Foods">Alimentos</string>
+    <string name="Ubications">Ubicaciones</string>
 </resources>
