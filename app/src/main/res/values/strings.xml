@@ -7,4 +7,9 @@
     <string name="Search">Buscar</string>
     <string name="Breakfast">Desayuno</string>
     <string name="Dinner">Almuerzo y Cena</string>
+    <string name="LogIn">Iniciar Sesión</string>
+    <string name="Mail">Correo o Usuario</string>
+    <string name="ExampleMail">ejemplo@correo.com</string>
+    <string name="Password">Contraseña</string>
+    <string name="ExamplePassword">•••••••••</string>
 </resources>
