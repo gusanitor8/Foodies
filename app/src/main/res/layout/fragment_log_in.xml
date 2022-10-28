@@ -10,6 +10,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -116,20 +117,22 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
         <!--- MENSAJE DE NO HAY CUENTA -->
+
+        <!--- BOTON DE CREAR CUENTA -->
+
         <TextView
             android:id="@+id/noAccountTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="136dp"
             android:layout_marginTop="48dp"
             android:fontFamily="@font/asap_bold"
             android:text="@string/NoAccount"
             android:textColor="@color/greyBlue"
             android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
-        <!--- BOTON DE CREAR CUENTA -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/signupButton"
             android:layout_width="120dp"

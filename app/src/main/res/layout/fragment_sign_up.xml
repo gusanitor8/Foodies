@@ -103,20 +103,22 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
         <!--- MENSAJE DE SI HAY CUENTA  -->
+
+        <!--- BOTON INICIAR SESION -->
         <TextView
             android:id="@+id/yesaccountTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="48dp"
             android:fontFamily="@font/asap_bold"
             android:text="@string/YesAccount"
             android:textColor="@color/greyBlue"
             android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/continueButton" />
 
-        <!--- BOTON INICIAR SESION -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login2Button"
             android:layout_width="120dp"
