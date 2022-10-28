@@ -38,11 +38,8 @@ class MainPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMainPageBinding.inflate(inflater, container, false)
-        val view = binding.root
-
-
-        return view
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_main_page, container, false)
     }
 
 
