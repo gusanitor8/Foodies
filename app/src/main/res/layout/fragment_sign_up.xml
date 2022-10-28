@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".crearCuentaFragment">
+    tools:context=".SignUpFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -13,12 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!--- MENSAJE DE INICIAR SESION -->
-
-        <!--- LOGO DE FOODIES -->
-
-        <!--- MENSAJE DE CORREO O USUARIO -->
-
+        <!--- MENSAJE DE CREAR CUENTA -->
         <TextView
             android:id="@+id/signupTextView"
             android:layout_width="wrap_content"
@@ -33,6 +28,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.137" />
 
+        <!--- MENSAJE DE CORREO ELECTRONICO -->
         <TextView
             android:id="@+id/mailTextView"
             android:layout_width="wrap_content"
@@ -46,6 +42,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signupTextView" />
 
+        <!--- TEXTBOX DE CORREO ELECTRONICO -->
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
@@ -75,6 +72,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signupTextView"/>
 
+        <!--- TEXTBOX DE CONTRASEÑA -->
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
@@ -89,6 +87,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordTextView" />
 
+        <!--- BOTON CREAR CUENTA -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/continueButton"
             android:layout_width="149dp"
@@ -103,6 +102,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
+        <!--- MENSAJE DE SI HAY CUENTA  -->
         <TextView
             android:id="@+id/yesaccountTextView"
             android:layout_width="wrap_content"
@@ -116,6 +116,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/continueButton" />
 
+        <!--- BOTON INICIAR SESION -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login2Button"
             android:layout_width="120dp"
@@ -130,10 +131,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/continueButton" />
-
-
-        <!--- WIDGET ALMUERZO Y CENA -->
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

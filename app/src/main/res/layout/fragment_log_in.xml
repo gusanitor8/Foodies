@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IniSesFragment">
+    tools:context=".LogInFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -54,6 +54,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginTextView" />
 
+        <!--- TEXTBOX DE CORREO O USUARIO -->
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
@@ -83,6 +84,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginTextView" />
 
+        <!--- TEXTBOX DE CONTRASEÑA -->
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
@@ -111,16 +113,15 @@
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
-            />
-
+        <!--- MENSAJE DE NO HAY CUENTA -->
         <TextView
             android:id="@+id/noAccountTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="48dp"
             android:fontFamily="@font/asap_bold"
             android:text="@string/NoAccount"
             android:textColor="@color/greyBlue"
@@ -128,6 +129,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
+        <!--- BOTON DE CREAR CUENTA -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/signupButton"
             android:layout_width="120dp"
@@ -142,10 +144,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginButton" />
-
-        <!--- WIDGET ALMUERZO Y CENA -->
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
