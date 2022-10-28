@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +36,18 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up, container, false)
+        val view = inflater.inflate(R.layout.fragment_sign_up, container, false)
+        val button1 = view.findViewById<Button>(R.id.login2Button)
+        val button2 = view.findViewById<Button>(R.id.continueButton)
+
+        button1.setOnClickListener{
+            view.findNavController().navigate(R.id.signup_to_login)
+        }
+        button2.setOnClickListener{
+            view.findNavController().navigate(R.id.signup_to_main)
+        }
+
+        return view
     }
 
     companion object {
