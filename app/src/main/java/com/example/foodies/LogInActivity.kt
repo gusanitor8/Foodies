@@ -35,12 +35,12 @@ class LogInActivity : AppCompatActivity() {
                         val intent = Intent(this, MainPageActivity::class.java)
                         startActivity(intent)
                     } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this,"Lo sentimos, no pudimos enontrar tu cuenta.", Toast.LENGTH_SHORT).show()
 
                     }
                 }
             } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Porfavor llene todos los campos.", Toast.LENGTH_SHORT).show()
 
             }
         }

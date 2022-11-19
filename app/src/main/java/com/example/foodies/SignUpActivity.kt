@@ -39,8 +39,9 @@ class SignUpActivity : AppCompatActivity() {
 
                     }
                 }
+
             } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Porfavor llene todos los campos.", Toast.LENGTH_SHORT).show()
 
             }
         }
