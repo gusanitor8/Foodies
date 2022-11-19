@@ -35,7 +35,7 @@ class LogInActivity : AppCompatActivity() {
                         val intent = Intent(this, MainPageActivity::class.java)
                         startActivity(intent)
                     } else {
-                        Toast.makeText(this,"Lo sentimos, no pudimos enontrar tu cuenta.", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this,"Lo sentimos, no pudimos encontrar tu cuenta.", Toast.LENGTH_SHORT).show()
 
                     }
                 }
