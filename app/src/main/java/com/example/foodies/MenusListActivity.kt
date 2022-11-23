@@ -1,5 +1,6 @@
 package com.example.foodies
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -45,7 +46,16 @@ class MenusListActivity : AppCompatActivity() {
                             }
                         }
                     }
-                    menuRV.adapter = MyAdapter(menuAL)
+                    var adapter = MyAdapter(menuAL)
+                    menuRV.adapter = adapter
+                    adapter.setOnItemClickListener(object: MyAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            //Toast.makeText(this@MenusListActivity,"Clickeaste. $position", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this@MenusListActivity, ProvidersActivity::class.java)
+                            startActivity(intent)
+                        }
+
+                    })
                 }
             }
 
