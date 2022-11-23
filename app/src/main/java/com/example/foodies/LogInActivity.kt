@@ -33,7 +33,7 @@ class LogInActivity : AppCompatActivity() {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
                         flag = true
-                        val intent = Intent(this, MainPageActivity::class.java)
+                        val intent = Intent(this, MenusListActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this,"Lo sentimos, no pudimos encontrar tu cuenta.", Toast.LENGTH_SHORT).show()
@@ -56,10 +56,10 @@ class LogInActivity : AppCompatActivity() {
             startActivity(intent)
         } */
 
-       /* if(firebaseAuth.currentUser != null && flag){
+       if(firebaseAuth.currentUser != null && flag){
             val intent = Intent(this, MainPageActivity::class.java)
             startActivity(intent)
-        } */
+        }
 
     }
 }
