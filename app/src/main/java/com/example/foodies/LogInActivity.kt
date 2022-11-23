@@ -11,6 +11,7 @@ import kotlin.math.sign
 class LogInActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLogInBinding
     private lateinit var firebaseAuth: FirebaseAuth
+    private var flag: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +30,9 @@ class LogInActivity : AppCompatActivity() {
             val pass = binding.editTextTextPassword.text.toString()
 
             if (email.isNotEmpty() && pass.isNotEmpty()) {
-
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
+                        flag = true
                         val intent = Intent(this, MainPageActivity::class.java)
                         startActivity(intent)
                     } else {
@@ -49,7 +50,13 @@ class LogInActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-       /* if(firebaseAuth.currentUser != null){
+        /* val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            val intent = Intent(this, MainPageActivity::class.java)
+            startActivity(intent)
+        } */
+
+       /* if(firebaseAuth.currentUser != null && flag){
             val intent = Intent(this, MainPageActivity::class.java)
             startActivity(intent)
         } */

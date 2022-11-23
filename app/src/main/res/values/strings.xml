@@ -22,4 +22,6 @@
     <string name="Restaurants">Restaurantes</string>
     <string name="Foods">Alimentos</string>
     <string name="Ubications">Ubicaciones</string>
+    <string name="MenuName">Nombre del Menu</string>
+    <string name="MenuPrice">Precio</string>
 </resources>
