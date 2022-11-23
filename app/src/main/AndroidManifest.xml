@@ -16,6 +16,12 @@
         android:theme="@style/Theme.Foodies"
         tools:targetApi="31">
         <activity
+            android:name=".ProvidersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".providers"
+            android:exported="false" />
+        <activity
             android:name=".MenusListActivity"
             android:exported="false" />
         <activity

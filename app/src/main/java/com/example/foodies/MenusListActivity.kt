@@ -39,9 +39,12 @@ class MenusListActivity : AppCompatActivity() {
                     for (menuSnapshot in snapshot.children){
 
                         val menu = menuSnapshot.getValue(Menu::class.java)
-                        menuAL.add(menu!!)
+                        if (menu != null) {
+                            if (menu.Time == "Almuerzo" || menu.Time == "Desayuno"){
+                                menuAL.add(menu!!)
+                            }
+                        }
                     }
-
                     menuRV.adapter = MyAdapter(menuAL)
                 }
             }

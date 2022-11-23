@@ -25,4 +25,6 @@
     <string name="MenuName">Nombre del Menu</string>
     <string name="MenuPrice">Precio</string>
     <string name="Options">Ver opciones</string>
+    <string name="Provider">Proveedor</string>
+    <string name="Options2">Opciones para adquirir</string>
 </resources>

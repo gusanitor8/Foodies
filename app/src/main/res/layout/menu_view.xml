@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/breakfastCardView"
+    android:id="@+id/menuCardView"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     app:cardElevation="0dp"
@@ -55,7 +55,7 @@
             android:textSize="12sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/signupButton"
+            android:id="@+id/optionsButton"
             android:layout_width="103dp"
             android:layout_height="21dp"
             android:layout_marginLeft="10dp"
