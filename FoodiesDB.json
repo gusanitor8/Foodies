@@ -220,7 +220,7 @@
         },
     "28": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9fcd944a5fd39c70dd7d9_Web-1.5lb-Crunchy.png",
-          "Name": "BURRITO 1/2 LB CRUNCHY",
+          "Name": "Burrito 1/2 Lb Crunchy",
           "Price": 20,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
@@ -273,14 +273,7 @@
           "Price": 20,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
-        },
-    "44": {
-      "Image": "https://s3-us-west-1.amazonaws.com/mcdonalds.delivery/gt/customer/3594.jpg",
-      "Name": "Cuarto de Libra",
-      "Price": 46,
-      "Providers": "Uber Eats, PedidosYa, Hugo",
-      "Time": "Almuerzo"
-    }
+        }    
 	 
   },
   "Providers": {
