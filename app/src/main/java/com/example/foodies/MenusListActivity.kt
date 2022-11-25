@@ -15,6 +15,7 @@ class MenusListActivity : AppCompatActivity() {
     private lateinit var dbREF: DatabaseReference
     private lateinit var menuRV: RecyclerView
     private lateinit var menuAL: ArrayList<Menu>
+    private var userPrice: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,11 @@ class MenusListActivity : AppCompatActivity() {
         menuRV.setHasFixedSize(true)
 
         menuAL = arrayListOf<Menu>()
+        var price = intent.getStringExtra("EXTRA_MESSAGE")
+        if (price != null) {
+            userPrice = price.toInt()
+        }
+        Toast.makeText(this@MenusListActivity, userPrice.toString() , Toast.LENGTH_SHORT).show()
         getMenuData()
 
     }
@@ -41,7 +47,7 @@ class MenusListActivity : AppCompatActivity() {
 
                         val menu = menuSnapshot.getValue(Menu::class.java)
                         if (menu != null) {
-                            if (menu.Time == "Almuerzo" || menu.Time == "Desayuno"){
+                            if (menu.Price == userPrice){
                                 menuAL.add(menu!!)
                             }
                         }

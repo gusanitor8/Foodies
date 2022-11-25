@@ -40,12 +40,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
 
-    <com.google.android.material.slider.RangeSlider
+    <com.google.android.material.slider.Slider
         android:id="@+id/priceInputSlider"
         android:valueFrom="0"
         android:valueTo="100"
-        android:value="20"
-        android:stepSize="20.0"
+        android:value="0"
         android:layout_marginTop="15dp"
         app:trackColor="@color/lightBlue"
         app:tickColor="@color/greyBlue"
@@ -53,6 +52,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:labelStyle="@style/tooltips" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/filterButton"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/corner_view"
+        android:fontFamily="@font/asap_bold"
+        android:text="@string/Filter"
+        android:textColor="@color/greyBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceInputSlider" />
 
     <TextView
         android:id="@+id/filter2TextView"
