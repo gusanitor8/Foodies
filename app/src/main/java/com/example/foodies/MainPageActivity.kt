@@ -7,14 +7,18 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
-import model.MyAdapter
 import model.Time
 import model.TAdapter
+import android.icu.text.NumberFormat
+import android.icu.util.Currency
+import android.os.Build
+import com.google.android.material.slider.RangeSlider
 
 class MainPageActivity : AppCompatActivity() {
     private lateinit var dbREF: DatabaseReference
     private lateinit var timeRV: RecyclerView
     private lateinit var timeAL: ArrayList<Time>
+    private lateinit var rangeSlider: RangeSlider
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +50,7 @@ class MainPageActivity : AppCompatActivity() {
                     timeRV.adapter = adapter
                     adapter.setOnItemClickListener(object: TAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            //Toast.makeText(this@MenusListActivity,"Clickeaste. $position", Toast.LENGTH_SHORT).show()
+                            //Toast.makeText(this@MenusListActivity,"Presionaste $position", Toast.LENGTH_SHORT).show()
                             if (position == 0){
                                 val intent = Intent(this@MainPageActivity, BreakfastMenusActivity::class.java)
                                 startActivity(intent)
@@ -65,5 +69,14 @@ class MainPageActivity : AppCompatActivity() {
             }
         })
 
+        /**get Id*/
+        rangeSlider = findViewById(R.id.priceInputSlider)
+
+        rangeSlider.setLabelFormatter { value: Float ->
+            val format = NumberFormat.getCurrencyInstance()
+            format.maximumFractionDigits = 0
+            format.currency = Currency.getInstance("GTQ")
+            format.format(value.toDouble())
+        }
     }
 }

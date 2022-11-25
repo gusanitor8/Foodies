@@ -26,4 +26,6 @@
     <string name="Options">Ver opciones</string>
     <string name="Provider">Proveedor</string>
     <string name="Options2">Opciones para adquirir</string>
+    <string name="Filter1">Filtrar por precio</string>
+    <string name="Filter2">Filtrar por tiempo de comida</string>
 </resources>

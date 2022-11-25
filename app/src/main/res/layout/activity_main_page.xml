@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPageActivity">
-
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    tools:context=".MainPageActivity"
+    android:orientation="vertical">
 
     <!--- MENSAJE DE BIENVENIDA -->
+
+    <!---BARRA DE BUSQUEDA-->
+
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="167dp"
@@ -26,38 +27,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!---BARRA DE BUSQUEDA-->
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+    <TextView
+        android:id="@+id/filter1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="@string/Filter1"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/priceInputSlider"
+        android:valueFrom="0"
+        android:valueTo="100"
+        android:value="20"
+        android:stepSize="20.0"
+        android:layout_marginTop="15dp"
+        app:trackColor="@color/lightBlue"
+        app:tickColor="@color/greyBlue"
+        app:thumbColor="@color/greyBlue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/search_view"
-        android:ellipsize="none"
-        android:hint="@string/Search"
-        android:paddingLeft="15dp"
-        android:paddingTop="5dp"
+        app:labelStyle="@style/tooltips" />
 
-        android:paddingBottom="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <TextView
+        android:id="@+id/filter2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="@string/Filter2"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/priceInputSlider" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerTimes"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="400dp"
         android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        app:layout_constraintTop_toBottomOf="@+id/priceInputSlider"
+        android:layout_marginTop="10dp"
         app:layout_constraintVertical_bias="0.1"
         tools:listitem="@layout/item_view" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
