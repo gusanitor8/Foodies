@@ -1,5 +1,7 @@
 package com.example.foodies
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -14,6 +16,7 @@ class ProvidersActivity : AppCompatActivity() {
     private lateinit var dbREF: DatabaseReference
     private lateinit var providerRV: RecyclerView
     private lateinit var providerAL: ArrayList<Provider>
+    private lateinit var linksAL: ArrayList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +27,7 @@ class ProvidersActivity : AppCompatActivity() {
         providerRV.setHasFixedSize(true)
 
         providerAL = arrayListOf<Provider>()
+        linksAL = arrayListOf<String>()
         getProviderData()
 
     }
@@ -39,9 +43,22 @@ class ProvidersActivity : AppCompatActivity() {
                     for (providerSnapshot in snapshot.children){
 
                         val provider = providerSnapshot.getValue(Provider::class.java)
+                        if (provider != null) {
+                            linksAL.add(provider.Link.toString())
+                        }
                         providerAL.add(provider!!)
                     }
-                    providerRV.adapter = PAdapter(providerAL)
+                    //providerRV.adapter = PAdapter(providerAL)
+                    var adapter = PAdapter(providerAL)
+                    providerRV.adapter = adapter
+                    adapter.setOnItemClickListener(object: PAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            //Toast.makeText(this@MenusListActivity,"Clickeaste. $position", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(linksAL.get(position)))
+                            startActivity(intent)
+                        }
+
+                    })
                 }
             }
 

@@ -12,9 +12,19 @@ import java.nio.file.attribute.UserPrincipalLookupService
 
 class PAdapter(private val providerList: ArrayList<Provider>): RecyclerView.Adapter<PAdapter.MyViewHolder>() {
 
+    private lateinit var mListener: onItemClickListener
+
+    interface onItemClickListener{
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener){
+        mListener = listener
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.provider_view, parent, false)
-        return MyViewHolder(itemView)
+        return MyViewHolder(itemView, mListener)
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
@@ -27,8 +37,14 @@ class PAdapter(private val providerList: ArrayList<Provider>): RecyclerView.Adap
         return providerList.size
     }
 
-    class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+    class MyViewHolder(itemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(itemView){
         val name: TextView = itemView.findViewById(R.id.providerTextView)
         var image: ImageView = itemView.findViewById(R.id.providerImageView)
+
+        init{
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
+        }
     }
 }
