@@ -30,7 +30,7 @@ class MenusListActivity : AppCompatActivity() {
         if (price != null) {
             userPrice = price.toInt()
         }
-        Toast.makeText(this@MenusListActivity, userPrice.toString() , Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this@MenusListActivity, userPrice.toString() , Toast.LENGTH_SHORT).show()
         getMenuData()
 
     }
@@ -47,7 +47,7 @@ class MenusListActivity : AppCompatActivity() {
 
                         val menu = menuSnapshot.getValue(Menu::class.java)
                         if (menu != null) {
-                            if (menu.Price == userPrice){
+                            if (menu.Price!! <= userPrice){
                                 menuAL.add(menu!!)
                             }
                         }

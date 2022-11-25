@@ -56,10 +56,10 @@ class LogInActivity : AppCompatActivity() {
             startActivity(intent)
         } */
 
-       if(firebaseAuth.currentUser != null && flag){
+       /*if(firebaseAuth.currentUser != null && flag){
             val intent = Intent(this, MainPageActivity::class.java)
             startActivity(intent)
-        }
+        }*/
 
     }
 }
