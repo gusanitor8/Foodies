@@ -13,7 +13,127 @@
       "Price": 35,
       "Providers": "Uber Eats, PedidosYa, Hugo",
       "Time": "Desayuno"
-    }
+    },
+    "03": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/f8369135-6290-4c04-9f70-bcdf1b468acc.png",
+      "Name": "Menu Super Campero",
+      "Price": 49,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "05": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/8372932d-e5a9-4b09-b5fe-40b07374179e.png",
+      "Name": "Menu Campero",
+      "Price": 39,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "07": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/4261193b-a25d-49c6-9b04-cab95bab57a8.png",
+      "Name": "Menu Super Campero de Alitas",
+      "Price": 65,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "09": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/d964e094-a0b0-4b2e-ab01-2a2a2a6653f4.png",
+      "Name": "Menu Campero de Alitas",
+      "Price": 55,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "11": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/893468da-2f87-4d32-922e-4c78c3387c1b.png",
+      "Name": "Desayuno Super Tipico",
+      "Price": 41,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Desayuno"
+    },
+    "13": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/78359ac0-12af-4a50-9daf-22cbfc5969ea.png",
+      "Name": "Desayuno Campero",
+      "Price": 48,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Desayuno"
+    }, 
+    "15": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/48de3a1a-b429-44d6-9a03-ac1ce527dd59.png",
+      "Name": "Torre de Panqueques Nutella Banano",
+      "Price": 31,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Desayuno"
+    }, 
+    "17": {
+      "Image": "https://pc-gt-cdn.s3.amazonaws.com/menu-images/prod-a/fa5ef01f-62d3-4218-b440-0f3051daa6a2.png",
+      "Name": "Menu Burrito Frijol y Aguacate",
+      "Price": 38,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Desayuno"
+    }, 
+    "19": {
+      "Image": "https://i.imgur.com/VcZJ4Cm.png",
+      "Name": "8 Alitas de Pollo Horneadas",
+      "Price": 55,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+  
+    "21": {
+      "Image": "https://i.imgur.com/bPqKdZ0.png",
+      "Name": "Cavatini Pollo y Brocoli",
+      "Price": 59,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "23": {
+      "Image": "https://i.imgur.com/GuLCgs7.png",
+      "Name": "Pizza Meat Lovers",
+      "Price": 80,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "25": {
+      "Image": "https://i.imgur.com/DCo3syo.png",
+      "Name": "Pizza Cheese Lovers",
+      "Price": 80,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "27": {
+      "Image": "https://i.imgur.com/ygvL01Q.png",
+      "Name": "Pizza Super Suprema",
+      "Price": 80,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Almuerzo"
+    },
+    "29": {
+      "Image": "https://mcdonalds.com.gt/imagen/menu-products/1640712806_31_McGriddleTocinohuevo_1624553835.png",
+      "Name": "McGriddle de Tocino y Huevo",
+      "Price": 36,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Desayuno"
+    }, 
+    "31": {
+      "Image": "https://mcdonalds.com.gt/imagen/menu-products/1640713522_23_DesayunoDeluxe_1624551731.png",
+      "Name": "Desayuno Deluxe",
+      "Price": 48,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Desayuno"
+    }, 
+    "33": {
+      "Image": "https://mcdonalds.com.gt/imagen/menu-products/1640712311_28_Boton_Sok_500x500px_McMuffin_Huevo_Frijol.png",
+      "Name": "McMuffin Huevo y Frijol",
+      "Price": 17,
+      "Providers": "Uber Eats, PedidosYa, Hugo",
+      "Time": "Desayuno"
+    }, 
+    "35": {
+    "Image": "https://mcdonalds.com.gt/imagen/menu-products/1640713720_24_DesayunoCompleto_1624552054.png",
+    "Name": "Desayuno Clasico",
+    "Price": 35,
+    "Providers": "Uber Eats, PedidosYa, Hugo",
+    "Time": "Desayuno"
+  } 
   },
   "Providers": {
     "01": {
