@@ -199,21 +199,21 @@
         },
     "22": {
           "Image": "https://s3-us-west-1.amazonaws.com/mcdonalds.delivery/gt/customer/3625.jpg",
-          "Name": "McGriddle™ de Salchicha",
+          "Name": "McGriddle de Salchicha",
           "Price": 34,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Desayuno"
         },
     "24": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9f954e2844f6a9e37e55b_Web-NachoCrunchyBurrito.png",
-          "Name": "NACHO CRUNCHY BURRITO",
+          "Name": "Nacho Crunchy Burrito",
           "Price": 21,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
         },
     "26": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9f95e28803bc2f142ff94_Web-Stacker-Carne.png",
-          "Name": "STACKER DE CARNE",
+          "Name": "Stacker de Carne",
           "Price": 18,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
@@ -227,35 +227,35 @@
         },
     "30": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9fcdf0c7fd05daaf43a06_Web-5Capas.png",
-          "Name": "BURRITO 5 CAPAS",
+          "Name": "Burrito 5 Capas",
           "Price": 20,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
         },
     "32": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9fce90d280ce3ab22f379_Web-Burrito-Supreme.png",
-          "Name": "BURRITO SUPREME",
+          "Name": "Burrito Supreme",
           "Price": 27,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
         },
     "34": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9fcf4039afa32dbfbed14_Web-Burrito-Pollo.png",
-          "Name": "BURRITO DE POLLO",
+          "Name": "Burrito de Pollo",
           "Price": 20,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
         },
     "36": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9fd01f15ec48693f580e2_Web-Gordita-Crunch.png",
-          "Name": "GORDITA CRUNCH",
+          "Name": "Gordita Crunch",
           "Price": 24,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
         },
     "38": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9f889c64fa666b2da854e_Web-PapasSupreme.png",
-          "Name": "PAPAS SUPREME",
+          "Name": "Papas Supreme",
           "Price": 22,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
@@ -269,7 +269,7 @@
         },
     "42": {
           "Image": "https://uploads-ssl.webflow.com/5f39c742eb00db82d17e9935/62a9f87ccc3804a0fa4a1721_Web-MexicanPapas.png",
-          "Name": "MEXICAN PAPAS",
+          "Name": "Mexican Papas",
           "Price": 20,
           "Providers": "Uber Eats, PedidosYa, Hugo",
           "Time": "Almuerzo"
